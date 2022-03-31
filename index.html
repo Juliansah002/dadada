@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Makanan</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+		<h3>Menu Pilihan Makanan</h3>
+		<table border="1px" cellpadding="5" cellspacing="0" width="600px">
+			<thead style="background-color: skyblue;">
+				<th width="6px">No</th>
+				<th>Nama Makanan</th>
+				<th>Harga Makanan</th>
+				<th>Kode Makanan</th>
+			</thead>
+			<tbody style="text-align: center;">
+				<tr>
+					<td>1. </td>
+					<td>Cumi Asam Manis</td>
+					<td>Rp. 75.000,-</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>2. </td>
+					<td>Cah Kangkung</td>
+					<td>Rp. 25.000,-</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>3. </td>
+					<td>Nasi Timbel Kumplit</td>
+					<td>Rp. 80.000,-</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4. </td>
+					<td>Ayam Rica-Rica</td>
+					<td>Rp. 120.000,-</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>5. </td>
+					<td>Daging Sapi Lada Hitam</td>
+					<td>Rp. 100.000,-</td>
+					<td>5</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<hr>
+		<br>
+
+		<form method="POST" action="proses.php">
+			<table>
+				<tr>
+					<td>kode Makanan</td>
+					<td>:</td>
+					<td>
+						<input type="number" min="1" max="5" name="makanan" placeholder="Masukan kode Makanan" required="">
+					</td>
+				</tr>
+				<tr>
+					<td>Jumlah Pesanan</td>
+					<td>:</td>
+					<td>
+						<input type="number" min="1" name="jumlah" placeholder="Masukan Banyaknya Pesanan" required="">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<input type="submit" name="btn" value="Proses">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html> 
